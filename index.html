@@ -18,15 +18,15 @@
       var map = L.Mapzen.map('map', {
         center: [41.750,-8.084],
         zoom: 7,
-        maxBounds: (
-          [29.728,-23.558],
-          [49.271,23.212]
-          ),
         tangramOptions: {
           scene: 'https://mapzen.com/api/scenes/22/1126/resources/blank.yaml',
           attribution: '© <a href="https://www.mapzen.com/rights">Mapzen</a>, <a href="https://openstreetmap.org/copyright">OpenStreetMap</a>, <a href="https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/active-fire-data">NASA/NOAA</a>, and <a href="https://www.mapzen.com/rights/#services-and-data-sources">others</a>'
         }
       });
+      map.maxBounds: (
+        [49.271,23.212],
+        [29.728,-23.558]
+          ),
       L.control.scale().addTo(map);
       L.Mapzen.hash({
         map: map
