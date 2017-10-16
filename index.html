@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Portugal, Spain fire data via Suomi/VIIRS (375m resolution)</title>
+    <title>Fire data for Portugal, Spain via Suomi/VIIRS (375m resolution)</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta charset="utf-8">
@@ -16,8 +16,8 @@
     <div id="map"></div>
     <script>
       var map = L.Mapzen.map('map', {
-        center: [38.4294, -122.5822],
-        zoom: 10,
+        center: [41.750,-8.084],
+        zoom: 7,
         tangramOptions: {
           scene: 'https://mapzen.com/api/scenes/22/1126/resources/blank.yaml',
           attribution: '© <a href="https://www.mapzen.com/rights">Mapzen</a>, <a href="https://openstreetmap.org/copyright">OpenStreetMap</a>, <a href="https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/active-fire-data">NASA/NOAA</a>, and <a href="https://www.mapzen.com/rights/#services-and-data-sources">others</a>'
@@ -31,7 +31,7 @@
         link: 'https://github.com/burritojustice/sonoma-napa-fire-map-viirs',
         tweet: 'fire map of Portugal & Spain, Sun-Mon, using VIIRS/Suomi data, made with @mapzen',
         repo: 'https://github.com/burritojustice/sonoma-napa-fire-map-viirs',
-        description: 'Zoomable map of the Portugal & Spain fires, Sun, 15 Oct to Mon, 16 Oct 2017, color = fire brightness, white outlines = newest data, via NASA/NOAA VIIRS I-Band Active Fire Data on Suomi polar orbiting satellite.'
+        description: 'Zoomable map of the Portuguese & Spanish wildfires, Sun, 15 Oct to Mon, 16 Oct 2017, color = fire brightness, white outlines = newest data, via NASA/NOAA VIIRS I-Band Active Fire Data on Suomi polar orbiting satellite.'
     });
     </script>
   </body>
